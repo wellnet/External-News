@@ -1,0 +1,8 @@
+{
+  "name": "My Web Portal - Servizio news",
+  "apiVersion": "2017-07-17 18:00",
+  "description": "Services used by My Web Portal.",
+  "includes": [
+    "news/news_detail.json"
+  ]
+}	

@@ -1,0 +1,10 @@
+news:
+  title: "My Web portal - Servizio news"
+  api_path: src/Plugin/RestService/news_service.json
+  base_url: "https://private-f545d-newsapi18.apiary-mock.com"
+  config:
+    command.params:
+      command.request_options:
+        timeout: 32
+        connect_timeout: 30
+        auth: ['my-user', 'my-password', 'Basic']

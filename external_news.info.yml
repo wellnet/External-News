@@ -1,0 +1,7 @@
+name: External News
+type: module
+description: External News for My Portal Website
+core: 8.x
+package: My Portal Website
+dependencies:
+  - http_client_manager

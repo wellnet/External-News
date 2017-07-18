@@ -1,0 +1,10 @@
+external_news.news_content:
+  path: '/news/{news}'
+  defaults:
+    _controller: '\Drupal\external_news\Controller\ExternalNewsContent::content'
+  requirements:
+    _role: 'anonymous+authenticated'
+  options:
+    parameters:
+      news:
+        type: 'external:news'

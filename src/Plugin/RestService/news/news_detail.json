@@ -1,0 +1,53 @@
+{
+  "operations": {
+    "GetNews": {
+      "httpMethod": "GET",
+      "uri": "/services/getnews",
+      "summary": "Get list of News",
+      "parameters": {
+        "nRighe": {
+          "type": "integer",
+          "location": "query",
+          "description": "The total number of news to be retrieved",
+          "required": false,
+          "default": 4
+        },
+        "nPagina": {
+          "type": "integer",
+          "location": "query",
+          "description": "The page number",
+          "required": false,
+          "default": 1
+        },
+        "idLingua": {
+          "type": "integer",
+          "location": "query",
+          "description": "it = Italian, en = English",
+          "required": false,
+          "default": "it"
+        },
+        "stato": {
+          "type": "string",
+          "location": "query",
+          "description": "The news state: DRAFT, PUBLISHED, UNPUBLISHED",
+          "required": false,
+          "default": "PUBLISHED"
+        }
+      }
+    },
+    "GetNewsDetail": {
+      "httpMethod": "GET",
+      "uri": "/services/news/{idNotizia}",
+      "summary": "Get details for a single News",
+      "parameters": {
+        "idNotizia": {
+          "type": "integer",
+          "location": "uri",
+          "description": "The news id",
+          "required": false
+        }
+      }
+    }
+  },
+  "models": {}
+}

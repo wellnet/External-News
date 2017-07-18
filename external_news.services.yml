@@ -1,0 +1,9 @@
+services:
+  external_news.http_client.news:
+    parent: http_client_manager.client_base
+    arguments: ['news']
+  external:news:
+    class: Drupal\external_news\ParamConverter\ExternalNewsParamConverter
+    arguments: ['@external_news.http_client.news']
+    tags:
+      - { name: paramconverter }
